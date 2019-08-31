@@ -1,0 +1,86 @@
+
+.btn{
+  border: 1px solid transparent;
+  border-radius: 0.3em;
+  padding: 1em;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  opacity: 1.0;
+}
+
+button[class="btn small"]{
+  font-size: 0.7em;
+}
+
+button[class="btn big"]{
+  font-size: 1.1em;
+}
+
+button[class="btn black"]{
+  background-color: black;
+  color: white;
+}
+
+button[class="btn green"]{
+  background-color: #4CAF50;
+  color: white;
+}
+
+button[class="btn sky"]{
+  background-color: #00BCD4;
+  color: white;
+}
+
+button[class="btn purple"]{
+  background-color: #673AB7;
+  color: white;
+}
+
+button[class="btn border"]{
+  background-color: transparent;
+  color: #1A237E;
+  border-color: #1A237E;
+}
+button[class="btn border green"]{
+  background-color: transparent;
+  color: #4CAF50;
+  border-color: #4CAF50;
+}
+button[class="btn border sky"]{
+  background-color: transparent;
+  color: #00BCD4;
+  border-color: #00BCD4;
+}
+button[class="btn border purple"]{
+  background-color: transparent;
+  color: #673AB7;
+  border-color: #673AB7;
+}
+
+button[class="btn green big"]{
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1em;
+}
+
+button[class="btn border purple small"]{
+  background-color: #673AB7;
+  color: white;
+  font-size: 0.7em;
+}
+
+button[class="btn border big"]{
+  background-color: transparent;
+  color: tomato;
+  font-size: 1.1em;
+  border: 5px solid tomato;
+}
+
+button[class="btn small sky"]{
+  background-color: #00BCD4;
+  color: white;
+  font-size: 0.7em;
+}
