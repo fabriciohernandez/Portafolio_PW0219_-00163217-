@@ -6,7 +6,7 @@ body { display: flex; justify-content: center; align-items: center; flex-directi
 
 .containerHeader { display: flex; width: 95%; height: 3em; justify-content: end; }
 .containerHeader button { margin-right: 15px; }
-.containerHeader #bh { font-size: 2em; background-color: transparent; color: white; }
+.containerHeader #bh { font-size: 20px; background-color: transparent; }
 .containerHeader #bh:hover { background-color: #cfd8dc; }
 
 .containerBody { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 95%; height: 85vh; }
@@ -18,6 +18,6 @@ body { display: flex; justify-content: center; align-items: center; flex-directi
 .containerFooter #bf { background-color: transparent; font-size: 20px; }
 .containerFooter #bf:hover { width: 100px; height: auto; }
 
-button { border-radius: 16px; }
+button { border-radius: 16px; color: white; }
 
 h1 { color: white; font-size: 4em; font-family: "Lobster", cursive; border-bottom: 20px; }
