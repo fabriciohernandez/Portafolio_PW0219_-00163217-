@@ -1,15 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 * { font-family: "Open Sans Condensed", sans-serif; }
 
-body { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+body { display: flex; justify-content: center; align-items: center; flex-direction: column; background-image: url("../../img/fondo.jpg"); }
 
-.containerHeader { display: flex; width: 95%; height: 3em; justify-content: end; background-color: blue; }
+.containerHeader { display: flex; width: 95%; height: 3em; justify-content: end; }
 .containerHeader button { margin-right: 15px; }
+.containerHeader #bh { font-size: 2em; background-color: transparent; color: white; }
+.containerHeader #bh:hover { background-color: #cfd8dc; }
 
-.containerBody { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 95%; height: 85vh; background-color: gray; }
+.containerBody { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 95%; height: 85vh; }
 .containerBody .subContainerBody { display: flex; justify-content: center; align-items: center; width: 50%; flex-wrap: wrap; }
 .containerBody .subContainerBody img { width: 75px; height: 75px; border-radius: 150px; }
+.containerBody .subContainerBody img:hover { width: 100px; height: 100px; }
 
-.containerFooter { display: flex; width: 95%; height: 3em; justify-content: space-between; background-color: red; }
+.containerFooter { display: flex; width: 95%; height: 3em; justify-content: space-between; }
+.containerFooter #bf { background-color: transparent; font-size: 20px; }
+.containerFooter #bf:hover { width: 100px; height: auto; }
 
-button { border-radius: 7px; }
+button { border-radius: 16px; }
+
+h1 { color: white; font-size: 4em; font-family: "Lobster", cursive; border-bottom: 20px; }
