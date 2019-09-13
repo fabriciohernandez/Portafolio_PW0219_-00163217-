@@ -2,14 +2,19 @@
 $bg: blue;
 $ff: 'Open Sans Condensed', sans-serif;
 
+@mixin centerElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 *{
     font-family: $ff;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include centerElements();
+    flex-direction: column;  
 }
 
 .containerHeader{
@@ -25,10 +30,24 @@ body{
 }
 
 .containerBody{
-    display: flex;
+    @include centerElements();
+    flex-direction: column;
     width: 95%;
     height: 85vh;   
     background-color: gray;
+
+    .subContainerBody{
+        @include centerElements();
+        width: 50%;
+        flex-wrap: wrap;
+        
+        img{
+            width: 75px;
+            height: 75px;
+            border-radius:150px;
+        }
+
+    }
 }
 
 .containerFooter{
