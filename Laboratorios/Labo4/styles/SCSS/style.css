@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+* { font-family: "Open Sans Condensed", sans-serif; }
+
+body { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.containerHeader { display: flex; width: 95%; height: 3em; justify-content: end; background-color: blue; }
+.containerHeader button { margin-right: 15px; }
+
+.containerBody { display: flex; width: 95%; height: 85vh; background-color: gray; }
+
+.containerFooter { display: flex; width: 95%; height: 3em; justify-content: space-between; background-color: red; }
+
+button { border-radius: 7px; }
