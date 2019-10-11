@@ -32,10 +32,23 @@ let parseLateBool=(value)=>{
     }
 }
 
+let carnet_regex = new RegExp("^[0-9]{8}$")
+
 btn_submit.addEventListener('click',()=>{
     let carnet = carnet_field.value
     let schedule = schedule_field.options[schedule_field.selectedIndex].text
     let late = parseLateBool(late_switch.cheked)
 
-    addStudent(carnet,schedule,late)
+    if(carnet_regex.test(carnet)){
+        addStudent(carnet,schedule,late)
+    }else{
+        alert("Formato de carnet inválido");
+    }
+    
 });
+
+carnet_field.addEventListener('keyup',(event)=>{
+    if(event.keyCode==13){
+        btn_submit.click();
+    }
+})
