@@ -6,7 +6,6 @@ let late_switch = document.querySelector('#late_switch');
 let table_body = document.querySelector('#table_body');
 
 let addStudent =(carnet, schedule, late)=>{
-    
     let new_row = document.createElement('tr');
     new_row.classList.add("table-active");
 
@@ -58,22 +57,20 @@ carnet_field.addEventListener('keyup',(event)=>{
 })
 
 let removeStudent=(t)=>{ 
-    let carnet_confirmacion = document.querySelector('#carnet_confirmacion');
-    let carnetConfirm = carnet_confirmacion.value;
+    let carnet_confirmacion = document.querySelectorAll('#carnet_confirmacion');
     var td = t.parentNode;
     var tr = td.parentNode;
 
     let referencia = tr.getElementsByTagName("td");
-    let contexto = referencia[0].innerText;
-
-    console.log(contexto);
-    console.log(carnetConfirm);
     
-    if (carnetConfirm==contexto) {
-        var table = tr.parentNode;
-        table.removeChild(tr);
-    }else{
-        alert("Carnet incorrecto");
-    }
+    let contexto = referencia[0].innerText;
+   
 
+    for (let i = 0; i < carnet_confirmacion.length; i++) {
+        console.log(carnet_confirmacion[i].value);
+        if (carnet_confirmacion[i].value==contexto) {
+            var table = tr.parentNode;
+            table.removeChild(tr);
+        }  
+    }   
 }
